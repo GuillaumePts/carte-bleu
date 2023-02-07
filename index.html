@@ -8,10 +8,39 @@
   <title>Carte bleu</title>
 </head>
 <body>
-  <h1>coucou</h1>
+  
+  <div id="content">
+    <header>
+      
 
-  <img src="images/bg-card-back.png" alt="">
+      
+      <img src="images/cardfront.png" alt="">
+      <img src="images/bg-card-back.png" alt="">
+      
+    </header>
+    <main>
+      <div id="form">
+        <label for="name">name</label>
+        <input type="text" id="name">
 
+        <label for="numero">numero</label>
+        <input type="text" id="numero">
+
+        <div id="date_et_cvc">
+
+          <label for="date">exp. date</label>
+          <input type="text" class="date" id="mois">
+          <input type="text" class="date" id="annee">
+
+          <label for="cvc">cvc</label>
+          <input type="text" id="cvc">
+          
+        </div>
+        
+        <input type="button" value="confirm">
+      </div>
+    </main>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
