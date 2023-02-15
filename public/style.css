@@ -8,12 +8,14 @@ body{
 
 #content{
     width: 100%;
+    max-width: 1540px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    border: 1px solid black;
 }
 
 header{
@@ -89,7 +91,7 @@ main #form label{
     font-family:'Space Grotesk', sans-serif; 
     font-weight: 600;
     font-size: 0.7rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: #220930;
 }
 
@@ -132,4 +134,93 @@ main #form #confirm{
     border: none;
     font-size: 1.1rem;
     padding: 16px;
+}
+
+
+@media (min-width:600px) {
+    header{
+        height: 500px;
+    }
+
+    header #cards img{
+        width: 450px ;
+    }
+
+    header #cards{
+        width: 550px;
+    }
+}
+
+
+@media (min-width:913px) {
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #content{
+        flex-direction: row;
+    }
+
+    header{
+        height: 100vh;
+        background-image: url('./images/bg-main-desktop.png');
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    header #cards{
+        position: relative;
+        height: 330px;
+    }
+
+    header #cards img{
+        width: 280px ;
+    }
+
+    header #cards #frontCard{
+        top: 0;
+        right: -80px;
+    }
+
+    header #cards #backCard{
+        bottom: 0;
+        top: auto;
+        right: -150px;
+        box-shadow: 8px 12px 20px 5px #00000024;
+        border-radius: 10px;
+    }
+
+    main{
+        width: 70%;
+    }
+
+    main #form{
+        margin:0;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1025px) {
+    header #cards{
+        position: relative;
+        height: 460px;
+    }
+
+    header #cards img{
+        width: 400px ;
+    }
+
+    header #cards #frontCard{
+        right: -130px;
+    }
+
+    header #cards #backCard{
+        right: -210px;
+    }
 }
