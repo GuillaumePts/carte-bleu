@@ -1,10 +1,135 @@
-*{box-sizing: border-box;padding: 0;margin: 0;}
+*{box-sizing: border-box;padding: 0;margin: 0; }
 
-
-h1{
-    color:red
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
 body{
-    background-color: #333;
+    background-color: #fff;
+}
+
+#content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+header{
+    width: 100%; 
+    height: 293px;
+    background-image: url('images/bg-main-mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+header #cards{
+    height: 100%;
+    position: relative;
+    width: 350px;
+}
+
+header #cards img{
+    width: 280px ;
+    position: absolute;
+}
+
+header #cards #frontCard{
+    border-radius: 7px;
+    z-index: 2;
+    bottom: -85px;
+}
+
+header #cards #backCard{
+    right: 0;
+    top: 0;
+}
+
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main #form{
+    width: 92%;
+    max-width: 400px;
+    margin: 60px auto 30px auto;
+}
+
+main #form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+main #form input{
+    padding: 13px;
+    border: 2px solid #e8e8e8;
+    border-radius: 7px;
+}
+
+main #form input::placeholder{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #cfcfcf;
+}
+
+main #form label{
+    font-family:'Space Grotesk', sans-serif; 
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    color: #220930;
+}
+
+main #form #date_et_cvc{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin: 0;
+    
+}
+
+main #form #date_et_cvc #expDate{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #form #date_et_cvc #expDate div{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+main #form #date_et_cvc #expDate div input{
+    width: 50%;
+}
+
+
+
+main #form #date_et_cvc #leCvc{
+    max-width: 50%;
+}
+
+main #form #confirm{
+    width: 100%;
+    background-color: #220930;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    font-size: 1.1rem;
+    padding: 16px;
 }
